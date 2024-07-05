@@ -6,16 +6,16 @@
     <title>Jheremy Strong</title>
     <style>
         body {
-            justify-content: center;
             display: flex;
+            justify-content: center;
             align-items: center;
             font-family: monospace;
             color: white;
             margin: 0;
             background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/519c2270779257.5bae709dac7d8.gif);
             background-size: cover;
-            background-position: cover;
-            height: 100dvh;
+            background-position: center;
+            height: 100vh;
         }
         main {
             display: flex;
@@ -26,8 +26,9 @@
             padding: 10px;
             backdrop-filter: blur(4px);
             text-align: center;
-            box-shadow: 0 1px 20px ;
-            max-width: 600px;
+            box-shadow: 0 1px 20px;
+            max-width: 90%;
+            box-sizing: border-box;
         }
         img {
             width: 200px;
@@ -65,11 +66,10 @@
             background-color: rgb(37, 37, 37);
             font-weight: 300;
             transition: box-shadow 0.1s, filter 0.1s;
-
-            &:hover {
-                box-shadow: 0 1px 20px rgb(167, 165, 165);
-                filter: brightness(1.12);
-            }
+        }
+        .badge:hover {
+            box-shadow: 0 1px 20px rgb(167, 165, 165);
+            filter: brightness(1.12);
         }
     </style>
 </head>
@@ -89,9 +89,7 @@
             <li class="badge">Figma</li>
             <li class="badge">Testing</li>
         </ul>
-        <h3>the time has come
-            <br>
-            w</h3>
+        <h3>the time has come<br>w</h3>
     </main>
 </body>
 </html>
